@@ -21,4 +21,4 @@ for (let i = 0; i < inputArray.length - 1; i++) {
     if (found) break;
 }
 
-found ? console.log('ADA') : console.log('TIDAK ADA');
+found ? console.log('BISA') : console.log('TIDAK BISA');
