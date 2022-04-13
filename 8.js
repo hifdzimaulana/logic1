@@ -9,17 +9,13 @@
 
 const penjualanBuah = [
     { nama: 'Durian', jumlah: 10 },
-    { nama: 'Apel', jumlah: 10 },
+    { nama: 'Apel', jumlah: 80 },
     { nama: 'Mangga', jumlah: 10 },
     { nama: 'Jeruk', jumlah: 10 },
     { nama: 'Pepaya', jumlah: 10 },
 ]
 
-penjualanBuah.sort((a, b) => {
-    if (a.jumlah > b.jumlah) return 1
-    if (a.jumlah < b.jumlah) return -1
-    return 0
-})
+penjualanBuah.sort((a, b) => a.jumlah > b.jumlah ? 1 : a.jumlah < b.jumlah ? -1 : 0)
 
 const palingLaris = penjualanBuah.slice(-1)[0]
 
