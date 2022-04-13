@@ -15,8 +15,8 @@ const penjualanBuah = [
     { nama: 'Pepaya', jumlah: 10 },
 ]
 
-penjualanBuah.sort((a, b) => a.jumlah > b.jumlah ? 1 : a.jumlah < b.jumlah ? -1 : 0)
+penjualanBuah.sort((a, b) => a.jumlah > b.jumlah ? -1 : a.jumlah < b.jumlah ? 1 : 0)
 
-const palingLaris = penjualanBuah.slice(-1)[0]
+const siPalingLaris = penjualanBuah[0]
 
-console.log(palingLaris.nama)
+console.log(siPalingLaris.nama)
