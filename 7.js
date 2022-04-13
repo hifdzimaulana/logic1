@@ -6,10 +6,10 @@
  * Silahkan tentukan apakah ada nilai yang sama di dalam array yang diberikan.
  */
 
-const inputArray = [1, 2, 3, 4, 7, 8]
+const input = [1, 2, 3, 4, 7, 8]
 let found = false
 
-inputArray.sort().reduce((prev, current) => {
+input.sort().reduce((prev, current) => {
     if (prev == current) found = true
     return current
 })

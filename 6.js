@@ -8,6 +8,7 @@
 
 const expectedSum = 10
 const inputArray = [4, 7, 3, 6, 1]
+
 let found = false
 
 for (let i = 0; i < inputArray.length - 1; i++) {
