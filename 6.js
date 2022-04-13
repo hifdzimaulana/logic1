@@ -7,13 +7,17 @@
  */
 
 const expectedSum = 10
-const inputArray = [4, 2, 3, 5, 1]
+const inputArray = [4, 7, 3, 6, 1]
 let found = false
 
 for (let i = 0; i < inputArray.length - 1; i++) {
     for (let x = 1; x < inputArray.length - i; x++) {
-        if (inputArray[i] + inputArray[i + x] == expectedSum) found = true
+        if (inputArray[i] + inputArray[i + x] == expectedSum) {
+            found = true;
+            break;
+        }
     }
+    if (found) break;
 }
 
-found ? console.log('ADA') : console.log('TIDAK ADA');;
+found ? console.log('ADA') : console.log('TIDAK ADA');
